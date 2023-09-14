@@ -9,6 +9,7 @@ import postgresql from '../assets/Experience logos/postgresql logo.png';
 import react from '../assets/Experience logos/react logo.png';
 import reactNative from '../assets/Experience logos/react native logo.png';
 import tailwind from '../assets/Experience logos/tailwind logo.png';
+import aws from '../assets/Experience logos/aws.png';
 
 const technologies = [
   {
@@ -70,6 +71,12 @@ const technologies = [
     src: tailwind,
     title: 'TAILWIND',
     style: 'shadow-blue-500',
+  },
+  {
+    id: 11,
+    src: aws,
+    title: 'AMAZON WEB SERVICES',
+    style: 'shadow-orange-500',
   },
 ];
 

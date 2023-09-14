@@ -21,14 +21,14 @@ const About = () => {
           Professional practice of 1 month with Ceibo Digital.
         </p>
 
-        <p className="text-xl mt-5">
+        {/* <p className="text-xl mt-5">
           My passion for programming arose from When I was 17 years old, I
           decided to develop my first web page using HTML and CSS. This
           experience motivated me to seek a more solid formation in the
           programming field so I joined a bootcamp with the aim of
           professionalizing and acquire knowledge of good practices as well as
           learn how to work in a development team
-        </p>
+        </p> */}
       </div>
     </div>
   );
