@@ -6,24 +6,26 @@ import nodejs from '../assets/Experience logos/nodejs.png';
 import postgresql from '../assets/Experience logos/postgresql logo.png';
 import react from '../assets/Experience logos/react logo.png';
 import reactNative from '../assets/Experience logos/react native logo.png';
+import tailwind from '../assets/Experience logos/tailwind logo.png';
 
 //Proyects images
 import clubDelPlan from '../assets/HOME.jpeg';
-import geekCentral from '../assets/HOME GEEK CENTRAL.png';
 import pomodoro from '../assets/Pomodoro Typescript.jpeg';
+import viteTmdb from '../assets/popular movies.png';
 
 const portfolios = [
   {
     id: 1,
-    src: geekCentral,
-    href: 'https://github.com/noahpark24/GeekCentralStore',
-    projectName: 'Geek Central Store',
+    src: viteTmdb,
+    href: 'https://github.com/noahpark24/TMDB',
+    projectName: 'Vite Tmdb',
     techs: [
       {
         src: javascript,
         alt: 'javascript logo',
       },
       { src: react, alt: 'react logo' },
+      { src: tailwind, alt: 'tailwind logo' },
       { src: nodejs, alt: 'nodejs logo' },
       { src: postgresql, alt: 'postgresql logo' },
     ],

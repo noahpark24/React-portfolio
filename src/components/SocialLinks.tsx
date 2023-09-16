@@ -1,7 +1,8 @@
 //utils
-import links from "../utils/socialMediaLinks";
+import SocialMediaLinks from '../utils/socialMediaLinks';
 
 const SocialLinks = () => {
+  const links = SocialMediaLinks();
   return (
     <div className="hidden lg:flex flex-col top-[35%] left-0 fixed ">
       <ul>
@@ -9,8 +10,8 @@ const SocialLinks = () => {
           <li
             key={link.id}
             className={
-              "flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500" +
-              " " +
+              'flex justify-between items-center w-40 h-14 px-4 ml-[-100px] hover:ml-[-10px] hover:rounded-md duration-300 bg-gray-500' +
+              ' ' +
               link.style
             }
           >

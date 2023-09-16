@@ -1,19 +1,26 @@
 //utils
 import portfolios from '../utils/proyectsLinks';
+//Redux
+import { useSelector } from 'react-redux';
+//Types
+import IdiomState from '../types/state';
+//Idiom switch
+import translate from '../config/idiomConfig';
 
 const Portfolio = () => {
+  const idiom = useSelector((state: IdiomState) => state.idiom);
   return (
     <div
-      id="portfolio"
+      id={translate(idiom, 'portfolio.id')}
       className="bg-gradient-to-b from-black to-gray-800 w-full  text-white md:h-screen"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8 sm:pt-12">
           {/*TITLE AND SUBTITLE*/}
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            Portfolio
+            {translate(idiom, 'portfolio.title')}
           </p>
-          <p className="py-6">Checkout some of my work right here</p>
+          <p className="py-6">{translate(idiom, 'portfolio.subtitle')}</p>
         </div>
 
         {/*Projects Card And Images */}

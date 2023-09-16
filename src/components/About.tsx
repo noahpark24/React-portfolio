@@ -1,25 +1,26 @@
+//Redux
+import { useSelector } from 'react-redux';
+//Types
+import IdiomState from '../types/state';
+//Idiom switch
+import translate from '../config/idiomConfig';
+
 const About = () => {
+  const idiom = useSelector((state: IdiomState) => state.idiom);
   return (
     <div
-      id="about"
+      id={translate(idiom, 'about.id')}
       className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
     >
       {/* agregar name="about*/}
       <div className="max-w-screen-lg p-4  mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8 ">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500">
-            About
+            {translate(idiom, 'about.title')}
           </p>
         </div>
 
-        <p className="text-xl mt-20">
-          Hi!, My name is Ivan , I'm graduated from a 4 month bootcamp in which
-          I committed myself to learning for 8–10 hours daily per week,
-          dedicating time to workshops and team projects using the agile SCRUM
-          methodology and organizing ourselves with Trello. During my
-          participation in the bootcamp, I had the opportunity to do a
-          Professional practice of 1 month with Ceibo Digital.
-        </p>
+        <p className="text-xl mt-20">{translate(idiom, 'about.content')}</p>
 
         {/* <p className="text-xl mt-5">
           My passion for programming arose from When I was 17 years old, I
