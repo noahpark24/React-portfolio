@@ -27,6 +27,10 @@ const Links = (): navLinks[] => {
     },
     {
       id: 5,
+      link: translate(idiom, 'nav.contact'),
+    },
+    {
+      id: 6,
       link: null,
       text: idiom,
     },
