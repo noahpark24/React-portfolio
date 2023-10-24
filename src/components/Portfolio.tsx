@@ -48,12 +48,12 @@ const Portfolio = () => {
               </a>
 
               {/* Tech Icons */}
-              <div className="flex items-center justify-center mt-5 pb-4">
+              <div className="flex items-center justify-center mt-5  pb-2 flex-wrap ">
                 {techs.map((tech, index) => (
                   <img
                     key={index}
                     src={tech.src}
-                    className="w-8 h-8 mx-2 "
+                    className="w-8 h-8 mx-2 mt-2"
                     alt={tech.alt}
                   />
                 ))}
