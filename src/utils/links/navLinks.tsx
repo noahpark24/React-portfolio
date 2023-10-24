@@ -1,10 +1,11 @@
 import { useSelector } from 'react-redux';
 //Idiom switch
-import translate from '../config/idiomConfig';
+import translate from '../../config/idiomConfig';
 //Types
-import IdiomState from '../types/state';
+import IdiomState from '../../types/state';
+import { navLinks } from '../../types/linkTypes';
 
-const Links = () => {
+const Links = (): navLinks[] => {
   const idiom = useSelector((state: IdiomState) => state.idiom);
 
   const navLinks = [
@@ -18,11 +19,16 @@ const Links = () => {
     },
     {
       id: 3,
-      link: translate(idiom, 'nav.portfolio'),
+      link: translate(idiom, 'nav.experience'),
     },
     {
       id: 4,
-      link: translate(idiom, 'nav.experience'),
+      link: translate(idiom, 'nav.portfolio'),
+    },
+    {
+      id: 5,
+      link: null,
+      text: idiom,
     },
   ];
   return navLinks;

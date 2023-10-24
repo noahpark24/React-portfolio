@@ -5,9 +5,9 @@ import { BsFillPersonLinesFill } from 'react-icons/bs';
 //Redux
 import { useSelector } from 'react-redux';
 //Types
-import IdiomState from '../types/state';
+import IdiomState from '../../types/state';
 //Idiom switch
-import translate from '../config/idiomConfig';
+import translate from '../../config/idiomConfig';
 
 const SocialMediaLinks = () => {
   const idiom = useSelector((state: IdiomState) => state.idiom);

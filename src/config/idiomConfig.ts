@@ -51,6 +51,7 @@ const texts: Record<string, Texts> = {
   },
 };
 
+//Retorna el texto en el idioma que reciba
 const translate = (idiom: string, id: string) => {
   return texts[idiom]?.[id];
 };

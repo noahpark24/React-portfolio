@@ -1,5 +1,5 @@
 //utils
-import SocialMediaLinks from '../utils/socialMediaLinks';
+import SocialMediaLinks from '../utils/links/socialMediaLinks';
 
 const SocialLinks = () => {
   const links = SocialMediaLinks();
