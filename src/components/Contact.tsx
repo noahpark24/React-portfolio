@@ -1,5 +1,5 @@
 //utils
-import technologies from '../utils/links/technologiesLinks';
+import contactLinks from '../utils/links/contactSectionLinks';
 //Redux
 import { useSelector } from 'react-redux';
 //Types
@@ -7,32 +7,35 @@ import IdiomState from '../types/state';
 //Idiom switch
 import translate from '../config/idiomConfig';
 
-const Experience = () => {
+const Contact = () => {
   const idiom = useSelector((state: IdiomState) => state.idiom);
-
   return (
     <div
-      id={translate(idiom, 'experience.id')}
+      id={translate(idiom, 'contact.id')}
       className="bg-gradient-to-b from-black to-gray-800 w-full  text-white md:h-screen pb-60"
     >
-      {/*TITLE AND SUBTITLE*/}
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
+        {/*TITLE AND SUBTITLE*/}
         <div>
           <p className="text-4xl font-bold border-b-4 border-gray-500 p-2 inline">
-            {translate(idiom, 'experience.title')}
+            {translate(idiom, 'contact.title')}
           </p>
-          <p className="py-6">{translate(idiom, 'experience.subtitle')}</p>
+          <p className="py-6">{translate(idiom, 'contact.subtitle')}</p>
         </div>
-        {/*TECHNOLOGIES CARD*/}
+        {/*CONTACT CARD*/}
         <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-8 text-center py-8 px-12 sm:px-0">
-          {technologies.map(({ id, src, title, style }) => (
-            <div
+          {contactLinks.map(({ id, src, title, style, href, download }) => (
+            <a
               key={id}
+              href={href}
+              target="_blank"
+              rel="noopener noreferrer"
+              download={download ? 'ivan-correa-cv.pdf' : undefined}
               className={`shadow-md hover:scale-105 duration-500 py-2 rounded-lg ${style}`}
             >
-              <img src={src} alt="logo" className="w-20 mx-auto " />
+              <img src={src} alt={title} className="w-20 mx-auto" />
               <p className="mt-4">{title}</p>
-            </div>
+            </a>
           ))}
         </div>
       </div>
@@ -40,4 +43,4 @@ const Experience = () => {
   );
 };
 
-export default Experience;
+export default Contact;

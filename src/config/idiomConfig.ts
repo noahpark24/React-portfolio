@@ -9,6 +9,7 @@ const texts: Record<string, Texts> = {
     'nav.about': 'About',
     'nav.portfolio': 'Portfolio',
     'nav.experience': 'Experience',
+    'nav.contact': 'Contact',
     'home.id': 'Home',
     'home.title': "I'm A Full-Stack Developer jr",
     'home.preferences':
@@ -24,6 +25,10 @@ const texts: Record<string, Texts> = {
     'experience.id': 'Experience',
     'experience.title': 'Experience',
     'experience.subtitle': "These Are Technologies I've Worked With",
+    'contact.id': 'Contact',
+    'contact.title': 'Contact',
+    'contact.subtitle':
+      'These are the places where you can contact me or check my work',
     'socialLinks.cv': 'Resume',
   },
   ESP: {
@@ -31,6 +36,7 @@ const texts: Record<string, Texts> = {
     'nav.about': 'Sobre Mi',
     'nav.portfolio': 'Portafolio',
     'nav.experience': 'Experiencia',
+    'nav.contact': 'Contacto',
     'home.id': 'Inicio',
     'home.title': 'Soy Un Full-Stack Developer jr',
     'home.preferences':
@@ -47,10 +53,15 @@ const texts: Record<string, Texts> = {
     'experience.title': 'Experiencia',
     'experience.subtitle':
       'Estas son tecnologias con las que estuve trabajando',
+    'contact.id': 'Contacto',
+    'contact.title': 'Contacto',
+    'contact.subtitle':
+      'Estos los lugares donde puedes contactarme o ver mi trabajo',
     'socialLinks.cv': 'Curriculum',
   },
 };
 
+//Retorna el texto en el idioma que reciba
 const translate = (idiom: string, id: string) => {
   return texts[idiom]?.[id];
 };

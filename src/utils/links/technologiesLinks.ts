@@ -1,15 +1,16 @@
 //logos
-import typescript from '../assets/Experience logos/typescript logo.png';
-import docker from '../assets/Experience logos/docker logo.png';
-import javascript from '../assets/Experience logos/javascript logo.png';
-import mongodb from '../assets/Experience logos/mongodb logo.png';
-import nextjs from '../assets/Experience logos/nextjs logo.png';
-import nodejs from '../assets/Experience logos/nodejs.png';
-import postgresql from '../assets/Experience logos/postgresql logo.png';
-import react from '../assets/Experience logos/react logo.png';
-import reactNative from '../assets/Experience logos/react native logo.png';
-import tailwind from '../assets/Experience logos/tailwind logo.png';
-import aws from '../assets/Experience logos/aws.png';
+import typescript from '../../assets/Experience logos/typescript logo.png';
+import docker from '../../assets/Experience logos/docker logo.png';
+import javascript from '../../assets/Experience logos/javascript logo.png';
+import mongodb from '../../assets/Experience logos/mongodb logo.png';
+import nextjs from '../../assets/Experience logos/nextjs logo.png';
+import nodejs from '../../assets/Experience logos/nodejs.png';
+import postgresql from '../../assets/Experience logos/postgresql logo.png';
+import react from '../../assets/Experience logos/react logo.png';
+import reactNative from '../../assets/Experience logos/react native logo.png';
+import tailwind from '../../assets/Experience logos/tailwind logo.png';
+import aws from '../../assets/Experience logos/aws.png';
+import nest from '../../assets/Experience logos/nest.js-logo.png';
 
 const technologies = [
   {
@@ -77,6 +78,12 @@ const technologies = [
     src: aws,
     title: 'AMAZON WEB SERVICES',
     style: 'shadow-orange-500',
+  },
+  {
+    id: 12,
+    src: nest,
+    title: 'NEST.JS',
+    style: 'shadow-red-500',
   },
 ];
 

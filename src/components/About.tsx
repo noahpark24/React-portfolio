@@ -10,7 +10,7 @@ const About = () => {
   return (
     <div
       id={translate(idiom, 'about.id')}
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white pb-60"
     >
       {/* agregar name="about*/}
       <div className="max-w-screen-lg p-4  mx-auto flex flex-col justify-center w-full h-full">
