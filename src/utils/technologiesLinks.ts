@@ -10,7 +10,7 @@ import react from '../assets/Experience logos/react logo.png';
 import reactNative from '../assets/Experience logos/react native logo.png';
 import tailwind from '../assets/Experience logos/tailwind logo.png';
 import aws from '../assets/Experience logos/aws.png';
-
+import nest from '../assets/Experience logos/nest.js-logo.png';
 const technologies = [
   {
     id: 1,
@@ -77,6 +77,12 @@ const technologies = [
     src: aws,
     title: 'AMAZON WEB SERVICES',
     style: 'shadow-orange-500',
+  },
+  {
+    id: 12,
+    src: nest,
+    title: 'NEST.JS',
+    style: 'shadow-red-500',
   },
 ];
 
