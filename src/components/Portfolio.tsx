@@ -1,5 +1,5 @@
 //utils
-import portfolios from '../utils/proyectsLinks';
+import portfolios from '../utils/links/proyectsLinks';
 //Redux
 import { useSelector } from 'react-redux';
 //Types

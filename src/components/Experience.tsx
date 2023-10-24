@@ -1,5 +1,5 @@
 //utils
-import technologies from '../utils/technologiesLinks';
+import technologies from '../utils/links/technologiesLinks';
 //Redux
 import { useSelector } from 'react-redux';
 //Types

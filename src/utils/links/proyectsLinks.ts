@@ -1,20 +1,20 @@
 //logos
-import typescript from '../assets/Experience logos/typescript logo.png';
-import javascript from '../assets/Experience logos/javascript logo.png';
-import mongodb from '../assets/Experience logos/mongodb logo.png';
-import nodejs from '../assets/Experience logos/nodejs.png';
-import postgresql from '../assets/Experience logos/postgresql logo.png';
-import react from '../assets/Experience logos/react logo.png';
-import reactNative from '../assets/Experience logos/react native logo.png';
-import tailwind from '../assets/Experience logos/tailwind logo.png';
-import nextjs from '../assets/Experience logos/nextjs logo.png';
-import nestjs from '../assets/Experience logos/nest.js-logo.png';
+import typescript from '../../assets/Experience logos/typescript logo.png';
+import javascript from '../../assets/Experience logos/javascript logo.png';
+import mongodb from '../../assets/Experience logos/mongodb logo.png';
+import nodejs from '../../assets/Experience logos/nodejs.png';
+import postgresql from '../../assets/Experience logos/postgresql logo.png';
+import react from '../../assets/Experience logos/react logo.png';
+import reactNative from '../../assets/Experience logos/react native logo.png';
+import tailwind from '../../assets/Experience logos/tailwind logo.png';
+import nextjs from '../../assets/Experience logos/nextjs logo.png';
+import nestjs from '../../assets/Experience logos/nest.js-logo.png';
 
 //Proyects images
-import clubDelPlan from '../assets/HOME.jpeg';
-import pomodoro from '../assets/Pomodoro Typescript.jpeg';
-import viteTmdb from '../assets/popular movies.png';
-import todoList from '../assets/todoList.png';
+import clubDelPlan from '../../assets/HOME.jpeg';
+import pomodoro from '../../assets/Pomodoro Typescript.jpeg';
+import viteTmdb from '../../assets/popular movies.png';
+import todoList from '../../assets/todoList.png';
 
 const portfolios = [
   {

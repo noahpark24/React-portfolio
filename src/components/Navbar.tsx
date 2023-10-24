@@ -2,21 +2,19 @@
 import { FaBars, FaTimes } from 'react-icons/fa';
 //Redux And React
 import { useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { setIdiom } from '../state/idiom';
 
 //utils
-import links from '../utils/navLinks';
+import links from '../utils/links/navLinks';
+import useToggleLanguage from '../utils/functions/toggleLanguague';
 
 const Navbar = () => {
   const [nav, setNav] = useState<boolean>(false);
   const navLinks = links();
-  const idiom = useSelector((state: any) => state.idiom);
-  const dispatch = useDispatch();
-  // console.log('soy el idioma actual : ', idiom);
 
-  const toggleLanguage = () => {
-    dispatch(setIdiom(idiom === 'ENG' ? 'ESP' : 'ENG'));
+  const toggleLanguage = useToggleLanguage();
+
+  const handleMobileClick = () => {
+    setNav(false);
   };
 
   return (
@@ -35,19 +33,13 @@ const Navbar = () => {
             key={id}
             className="px-4 cursor-pointer capitalize font-medium  text-gray-500 hover:scale-105 hover:text-white duration-200"
           >
-            <a href={'#' + link.link}>{link.link}</a>
+            {link.link ? (
+              <a href={'#' + link.link}>{link.link}</a>
+            ) : (
+              <p onClick={() => toggleLanguage()}>{link.text}</p>
+            )}
           </li>
         ))}
-
-        {/* Idiom indicator */}
-        <div className="hidden md:flex">
-          <div
-            onClick={toggleLanguage}
-            className="px-4 cursor-pointer capitalize font-medium text-gray-500 hover:scale-105 hover:text-white duration-200"
-          >
-            {idiom}
-          </div>
-        </div>
       </ul>
 
       {/*NAV ICONS*/}
@@ -66,7 +58,20 @@ const Navbar = () => {
               key={id}
               className="px-4 cursor-pointer capitalize py-6 text-4xl "
             >
-              <a href={'#' + link.link}>{link.link}</a>
+              {link.link ? (
+                <a onClick={handleMobileClick} href={'#' + link.link}>
+                  {link.link}
+                </a>
+              ) : (
+                <span
+                  onClick={() => {
+                    handleMobileClick();
+                    toggleLanguage();
+                  }}
+                >
+                  {link.text}
+                </span>
+              )}
             </li>
           ))}
         </ul>
