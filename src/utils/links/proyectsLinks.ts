@@ -11,6 +11,7 @@ import nextjs from '../../assets/Experience logos/nextjs logo.png';
 import nestjs from '../../assets/Experience logos/nest.js-logo.png';
 import docker from '../../assets/Experience logos/docker logo.png';
 import aws from '../../assets/Experience logos/aws.png';
+import jest from '../../assets/Experience logos/jest.png';
 
 //Proyects images
 import clubDelPlan from '../../assets/HOME.jpeg';
@@ -78,6 +79,7 @@ const portfolios = [
       { src: tailwind, alt: 'tailwind logo' },
       { src: nestjs, alt: 'nest.js logo' },
       { src: postgresql, alt: 'postgresql logo' },
+      { src: jest, alt: 'jest logo' },
     ],
   },
   {
@@ -96,6 +98,7 @@ const portfolios = [
       { src: docker, alt: 'docker logo' },
       { src: aws, alt: 'aws logo' },
       { src: mongodb, alt: 'mongodb logo' },
+      { src: jest, alt: 'jest logo' },
     ],
   },
 ];
