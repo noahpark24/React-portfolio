@@ -11,6 +11,7 @@ import reactNative from '../../assets/Experience logos/react native logo.png';
 import tailwind from '../../assets/Experience logos/tailwind logo.png';
 import aws from '../../assets/Experience logos/aws.png';
 import nest from '../../assets/Experience logos/nest.js-logo.png';
+import jest from '../../assets/Experience logos/jest.png';
 
 const technologies = [
   {
@@ -83,6 +84,12 @@ const technologies = [
     id: 12,
     src: nest,
     title: 'NEST.JS',
+    style: 'shadow-red-500',
+  },
+  {
+    id: 12,
+    src: jest,
+    title: 'JEST',
     style: 'shadow-red-500',
   },
 ];
