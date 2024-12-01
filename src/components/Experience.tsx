@@ -13,7 +13,7 @@ const Experience = () => {
   return (
     <div
       id={translate(idiom, 'experience.id')}
-      className="bg-gradient-to-b from-black to-gray-800 w-full  text-white md:h-screen pb-60"
+      className="bg-gray-800 w-full  text-white md:h-screen pb-60"
     >
       {/*TITLE AND SUBTITLE*/}
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
