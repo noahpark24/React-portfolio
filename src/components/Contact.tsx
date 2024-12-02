@@ -12,7 +12,7 @@ const Contact = () => {
   return (
     <div
       id={translate(idiom, 'contact.id')}
-      className="bg-gradient-to-b from-black to-gray-800 w-full  text-white md:h-screen pb-60"
+      className="bg-gradient-to-b from-gray-800 to-black w-full  text-white md:h-screen pb-50"
     >
       <div className="max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full h-full text-white">
         {/*TITLE AND SUBTITLE*/}

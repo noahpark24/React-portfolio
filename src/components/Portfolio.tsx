@@ -12,7 +12,7 @@ const Portfolio = () => {
   return (
     <div
       id={translate(idiom, 'portfolio.id')}
-      className="bg-gradient-to-b from-gray-800 to-black w-full h-full"
+      className="bg-gray-800 to-black w-full h-full"
     >
       <div className="max-w-screen-lg p-4 mx-auto flex flex-col justify-center w-full h-full">
         <div className="pb-8 sm:pt-12">
